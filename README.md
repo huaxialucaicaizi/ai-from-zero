@@ -4,8 +4,8 @@
 
 # AI From Zero · 零基础学 AI
 
-**零基础学 AI 的开源 skill 仓库：从知道看什么、学会提问、装好工具，到做出第一个作品、用进自己的工作、做出自己的 skill，一步步带你从 0 用起 AI。**<br>
-Learn AI from zero: open-source skills that take you step by step from knowing what to follow, asking good questions, and setting up your tools, to building your first project, using AI in your own job, and making your own skill.
+**零基础学 AI 的开源 skill 仓库：从知道该关注哪些博主、科技媒体和课程，到学会写提示词、让「安装医生」帮你排除装机故障，再到做出第一个作品、把 AI 用进自己的工作、做出自己的 skill，一步步带你从 0 用起 AI。**<br>
+Learn AI from zero, step by step: find the right creators, tech media, and courses to follow, learn to write prompts, let the setup doctor fix install problems, build your first project, use AI in your own job, and make your own skill.
 
 [![CI](https://github.com/huaxialucaicaizi/ai-from-zero/actions/workflows/ci.yml/badge.svg)](https://github.com/huaxialucaicaizi/ai-from-zero/actions/workflows/ci.yml)
 [![Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
@@ -37,7 +37,7 @@ Learn AI from zero: open-source skills that take you step by step from knowing w
 <a id="zh-intro"></a>
 ### 一句话介绍
 
-**零基础学 AI 的开源 skill 仓库：从知道看什么、学会提问、装好工具，到做出第一个作品、用进自己的工作、做出自己的 skill，一步步带你从 0 用起 AI。**
+**零基础学 AI 的开源 skill 仓库：从知道该关注哪些博主、科技媒体和课程，到学会写提示词、让「安装医生」帮你排除装机故障，再到做出第一个作品、把 AI 用进自己的工作、做出自己的 skill，一步步带你从 0 用起 AI。**
 
 特点：一个仓库里有 6 个 skill，面向中文工作场景，输出时讲清为什么，结果尽量可核对。不需要脚本的 skill 可以先复制单文件版，粘贴进任意 AI 对话。
 
@@ -205,7 +205,7 @@ ai-from-zero/
 <a id="en-intro"></a>
 ### In one sentence
 
-**Learn AI from zero: open-source skills that take you step by step from knowing what to follow, asking good questions, and setting up your tools, to building your first project, using AI in your own job, and making your own skill.**
+**Learn AI from zero, step by step: find the right creators, tech media, and courses to follow, learn to write prompts, let the setup doctor fix install problems, build your first project, use AI in your own job, and make your own skill.**
 
 What you get: six skills in one repo, Chinese work scenarios, plain-language reasons for key choices, and results you can check. Skills that need no scripts can start as a single pasted Markdown file in any AI chat.
 
