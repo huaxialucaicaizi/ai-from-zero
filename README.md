@@ -4,8 +4,8 @@
 
 # AI From Zero · 零基础学 AI
 
-**给中国打工人的开源 skill 仓库：一个仓库 6 个 skill，中文场景、讲清为什么、结果可核对。**<br>
-An open-source skill repo for absolute beginners: six skills in one place, Chinese work scenarios, plain-language reasons, and results you can check.
+**零基础学 AI 的开源 skill 仓库：从知道看什么、学会提问、装好工具，到做出第一个作品、用进自己的工作、做出自己的 skill，一步步带你从 0 用起 AI。**<br>
+Learn AI from zero: open-source skills that take you step by step from knowing what to follow, asking good questions, and setting up your tools, to building your first project, using AI in your own job, and making your own skill.
 
 [![CI](https://github.com/huaxialucaicaizi/ai-from-zero/actions/workflows/ci.yml/badge.svg)](https://github.com/huaxialucaicaizi/ai-from-zero/actions/workflows/ci.yml)
 [![Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
@@ -37,7 +37,9 @@ An open-source skill repo for absolute beginners: six skills in one place, Chine
 <a id="zh-intro"></a>
 ### 一句话介绍
 
-**ai-from-zero** 帮零基础的人按一条路径学 AI：知道看什么、会提问、装上工具、做出作品、用进工作、做自己的 skill。不需要脚本的 skill 可以先复制单文件版，粘贴进任意 AI 对话。
+**零基础学 AI 的开源 skill 仓库：从知道看什么、学会提问、装好工具，到做出第一个作品、用进自己的工作、做出自己的 skill，一步步带你从 0 用起 AI。**
+
+特点：一个仓库里有 6 个 skill，面向中文工作场景，输出时讲清为什么，结果尽量可核对。不需要脚本的 skill 可以先复制单文件版，粘贴进任意 AI 对话。
 
 **痛点**
 - 不知道从哪学起，也不知道哪些信息源靠谱
@@ -203,7 +205,9 @@ ai-from-zero/
 <a id="en-intro"></a>
 ### In one sentence
 
-**ai-from-zero** is a learning path for absolute beginners: trusted sources, clear prompting, tool setup, a first build, job scenarios, and making your own skill. Skills that need no scripts can start as a single pasted Markdown file in any AI chat.
+**Learn AI from zero: open-source skills that take you step by step from knowing what to follow, asking good questions, and setting up your tools, to building your first project, using AI in your own job, and making your own skill.**
+
+What you get: six skills in one repo, Chinese work scenarios, plain-language reasons for key choices, and results you can check. Skills that need no scripts can start as a single pasted Markdown file in any AI chat.
 
 **Pain points**
 - Unclear where to start, or which sources to trust
