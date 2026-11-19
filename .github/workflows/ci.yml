@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Validate skill frontmatter, examples, triggers, banned words, error library
+        run: python3 scripts/validate_repo.py
+
+      - name: Build single-file paste editions
+        run: python3 scripts/build_single_file.py
+
+      - name: Check markdown links
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --max-retries 3
+            --retry-wait-time 2
+            --timeout 15
+            --accept 200,204,206,429
+            --exclude-mail
+            --exclude 'https://github.com/huaxialucaicaizi/ai-from-zero/(issues|discussions|security)'
+            --exclude 'https://linux.do'
+            --exclude 'https://t.me/'
+            '**/*.md'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  doctor-script:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run setup-doctor self-check (read-only)
+        run: bash setup-doctor/scripts/doctor.sh --tool all

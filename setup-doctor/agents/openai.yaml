@@ -1,0 +1,4 @@
+interface:
+  display_name: Setup Doctor
+  short_description: Mac 上自检环境，并按报错库给出人话解释与修复步骤。
+  default_prompt: 我在 Mac 上安装 AI 工具遇到报错，请用 setup-doctor 先自检再匹配报错库。

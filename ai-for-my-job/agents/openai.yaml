@@ -1,0 +1,4 @@
+interface:
+  display_name: AI for My Job
+  short_description: 说出职业，拿到 3 个最值得先试的 AI 场景和可复制提示词。
+  default_prompt: 我是[岗位]，AI 能帮我做什么？请按 ai-for-my-job 给出 3 个先试场景。

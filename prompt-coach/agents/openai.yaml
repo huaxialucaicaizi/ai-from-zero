@@ -1,0 +1,4 @@
+interface:
+  display_name: Prompt Coach
+  short_description: 最多追问 3 问，写出可复制提示词并逐块说明为什么。
+  default_prompt: 请用 prompt-coach 帮我把这段需求写成清楚的提示词，并说明为什么这样写。
