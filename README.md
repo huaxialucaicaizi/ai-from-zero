@@ -65,14 +65,14 @@ Learn AI from zero, step by step: find the right creators, tech media, and cours
 <a id="zh-skills"></a>
 ### 六个 skill
 
-| skill | 完成度 | 一句话 |
-| --- | --- | --- |
-| [**ai-for-my-job · 岗位场景**](./ai-for-my-job/) | 完整 | 说出职业，拿到 3 个先试场景和可复制提示词 |
-| [**prompt-coach · 提问教练**](./prompt-coach/) | 完整 | 最多追问 3 问，写出提示词并逐块说明为什么 |
-| [**ai-sources · 信息源导航**](./ai-sources/) | 完整 | 官方一手源 + 课程避坑判断标准 |
-| [**setup-doctor · 安装排障**](./setup-doctor/) | 完整 | Mac 自检 + 报错库（含官方出处） |
-| [**first-build · 第一个作品**](./first-build/) | v0.1 骨架 | 一句话做可双击打开的单文件网页 |
-| [**skill-maker · 做自己的 skill**](./skill-maker/) | v0.1 骨架 | 把常用提示词打成可安装的 skill |
+| skill | 完成度 | 对你有什么帮助 | 一句话 |
+| --- | --- | --- | --- |
+| [**ai-for-my-job · 岗位场景**](./ai-for-my-job/) | 完整 | 不知道 AI 能帮自己的工作做什么，它帮你找到马上能用上的场景。 | 说出职业，拿到 3 个先试场景和可复制提示词 |
+| [**prompt-coach · 提问教练**](./prompt-coach/) | 完整 | AI 总答非所问，它教你把问题问清楚，拿到能用的答案。 | 最多追问 3 问，写出提示词并逐块说明为什么 |
+| [**ai-sources · 信息源导航**](./ai-sources/) | 完整 | 信息太多不知道信谁，它帮你找到靠谱的一手消息，避开割韭菜的课。 | 官方一手源 + 课程避坑判断标准 |
+| [**setup-doctor · 安装排障**](./setup-doctor/) | 完整 | 装 AI 产品卡住了，它帮你查出原因、按官方方法修好。 | Mac 自检 + 报错库（含官方出处） |
+| [**first-build · 第一个作品**](./first-build/) | v0.1 骨架 | 没写过代码也能做出第一个自己的小网页，建立信心。 | 一句话做可双击打开的单文件网页 |
+| [**skill-maker · 做自己的 skill**](./skill-maker/) | v0.1 骨架 | 常用的提示词不用每次重写，打包成自己的 skill 反复用。 | 把常用提示词打成可安装的 skill |
 
 每个 skill 交付结果时，都会用一两句话说明关键选择的理由。示例一律标明虚构示例。
 
@@ -233,14 +233,14 @@ Office skills for decks, data, design, and video hang under “use at work” in
 <a id="en-skills"></a>
 ### The six skills
 
-| skill | Status | One line |
-| --- | --- | --- |
-| [**ai-for-my-job · job scenarios**](./ai-for-my-job/) | complete | Name a role; get three first scenarios and copy-ready prompts |
-| [**prompt-coach · prompt coach**](./prompt-coach/) | complete | Ask at most three questions; write a prompt and explain each part |
-| [**ai-sources · source guide**](./ai-sources/) | complete | First-party official sources plus a course red-flag checklist |
-| [**setup-doctor · setup doctor**](./setup-doctor/) | complete | Mac self-check plus an error library with official sources |
-| [**first-build · first build**](./first-build/) | v0.1 skeleton | One sentence to a single-file page you can open locally |
-| [**skill-maker · skill maker**](./skill-maker/) | v0.1 skeleton | Turn a reused prompt into an installable skill |
+| skill | Status | How it helps you | One line |
+| --- | --- | --- | --- |
+| [**ai-for-my-job · job scenarios**](./ai-for-my-job/) | complete | Not sure what AI can do for your job? It finds scenarios you can use right away. | Name a role; get three first scenarios and copy-ready prompts |
+| [**prompt-coach · prompt coach**](./prompt-coach/) | complete | AI keeps missing the point? It teaches you to ask clearly and get answers you can use. | Ask at most three questions; write a prompt and explain each part |
+| [**ai-sources · source guide**](./ai-sources/) | complete | Too much noise to know whom to trust? It points you to reliable first-hand sources and helps you avoid overhyped courses. | First-party official sources plus a course red-flag checklist |
+| [**setup-doctor · setup doctor**](./setup-doctor/) | complete | Stuck installing an AI product? It finds the cause and fixes it the official way. | Mac self-check plus an error library with official sources |
+| [**first-build · first build**](./first-build/) | v0.1 skeleton | Never coded? Build your first small web page anyway and gain confidence. | One sentence to a single-file page you can open locally |
+| [**skill-maker · skill maker**](./skill-maker/) | v0.1 skeleton | Stop rewriting the same prompts; package them into your own reusable skill. | Turn a reused prompt into an installable skill |
 
 Every delivery includes a short reason for the key choice. Examples are marked as fictional examples.
 
