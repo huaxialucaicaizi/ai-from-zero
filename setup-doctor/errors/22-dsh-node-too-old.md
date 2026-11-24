@@ -5,7 +5,7 @@
 | 报错原文 / 现象 | DeepSeek Harness / `npx @deepseek-ai/dsh`：Node 版本过旧装不上或起不来 |
 | 平台 | DeepSeek Harness |
 | 人话解释 | 官方升级说明要求 Node.js 24.9+（以当时文档为准）；先 `node --version` 再装。 |
-| 出处 | https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/upgrade-guide/v0.2.1-rc.2/node-24/guide.md |
+| 出处 | https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/master/docs/upgrade-guide/v0.2.1-rc.2/node-24/guide.md |
 | 实测记录 | 待 Mac 实测 |
 
 ## Mac 修复步骤

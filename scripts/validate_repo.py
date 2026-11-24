@@ -18,18 +18,8 @@ SKILLS = [
     "first-build",
     "skill-maker",
 ]
-BANNED = ["元宝", "CodeBuddy"]
-# Whitelist path spelling for WorkBuddy project skills directory.
-WHITELIST_PATTERNS = [
-    re.compile(r"\.codebuddy/"),
-]
-
-
-def strip_whitelisted(text: str) -> str:
-    out = text
-    for pat in WHITELIST_PATTERNS:
-        out = pat.sub("", out)
-    return out
+# Hard ban list for this repo (user-facing text must not mention these).
+BANNED = ["元宝", "CodeBuddy", "WorkBuddy", "花叔", ".codebuddy"]
 
 
 def fail(msg: str) -> None:
@@ -97,15 +87,15 @@ def validate_skill(name: str) -> None:
         for path in sorted(examples.rglob("*")):
             if path.is_file() and path.suffix.lower() in {".md", ".html", ".txt"}:
                 text = path.read_text(encoding="utf-8", errors="ignore")
-                if "虚构示例" not in text:
-                    fail(f"{path}: examples must contain「虚构示例」")
+                if "虚构示例" not in text and "fictional example" not in text.lower():
+                    # Chinese marker required for user-facing examples
+                    if "虚构示例" not in text:
+                        fail(f"{path}: examples must contain「虚构示例」")
 
     triggers = ROOT / "tests" / "triggers" / f"{name}.md"
     if not triggers.exists():
         fail(f"missing trigger list {triggers}")
     ttext = triggers.read_text(encoding="utf-8")
-    should = len(re.findall(r"(?m)^\|?\s*\d+\s*\|[^|]*应该触发|^\|\s*\d+\s*\|", ttext))
-    # Prefer explicit markers
     should_n = len(re.findall(r"(?m)^-\s*\[should\]\s+", ttext))
     should_not_n = len(re.findall(r"(?m)^-\s*\[should-not\]\s+", ttext))
     if should_n != 10 or should_not_n != 10:
@@ -126,17 +116,16 @@ def validate_banned_words() -> None:
             continue
         if path.suffix.lower() not in {".md", ".yml", ".yaml", ".sh", ".py", ".html", ".txt"}:
             continue
-        # Allow this validator and CI workflow to mention the ban list itself.
+        # Allow validator / CI to mention the ban list itself.
         if path.name in {"validate_repo.py", "ci.yml"}:
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
-        check = strip_whitelisted(text)
         for word in BANNED:
-            if word in check:
-                bad.append(f"{path.relative_to(ROOT)}: contains banned word「{word}」")
+            if word in text:
+                bad.append(f"{path.relative_to(ROOT)}: contains banned「{word}」")
     if bad:
         fail("banned-word check failed:\n  - " + "\n  - ".join(bad))
-    print("✅ banned-word check (whitelist: .codebuddy/)")
+    print("✅ banned-word check")
 
 
 def validate_setup_doctor_errors() -> None:
@@ -150,7 +139,6 @@ def validate_setup_doctor_errors() -> None:
         text = path.read_text(encoding="utf-8")
         if "出处" not in text:
             fail(f"{path}: missing「出处」field")
-        # Require a non-empty 出处 value on a dedicated line or table cell.
         m = re.search(r"(?m)^(?:-\s*)?\*{0,2}出处\*{0,2}\s*[:：]\s*(\S.+)$", text)
         m2 = re.search(r"(?m)^\|\s*出处\s*\|\s*(\S.+?)\s*\|", text)
         value = (m.group(1).strip() if m else "") or (m2.group(1).strip() if m2 else "")

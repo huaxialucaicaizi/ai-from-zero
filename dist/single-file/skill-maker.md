@@ -2,12 +2,12 @@
 
 ---
 name: skill-maker
-description: "Use when someone wants to turn a prompt they reuse into an installable skill. Guides the name and description, generates SKILL.md, and explains how to install it in common agents and test that it triggers. Uses a weekly-report skill as the worked example. 想把常用提示词变成可安装 skill 时用。v0.1 骨架。"---
+description: "Use when someone wants to turn a prompt they reuse into an installable skill. Guides the name and description, generates SKILL.md, and explains how to install it in Claude Desktop (zip upload) or other agents and test that it triggers. Uses a weekly-report skill as the worked example. 想把常用提示词变成可安装 skill 时用。"
+---
 
-# skill-maker · 做自己的 skill（v0.1 骨架）
+# skill-maker · 做自己的 skill
 
-学习路径位置：**做自己的 skill**。  
-状态：**v0.1 骨架**。
+学习路径位置：**做自己的 skill**。
 
 ## 何时使用
 
@@ -19,14 +19,15 @@ description: "Use when someone wants to turn a prompt they reuse into an install
 - 代写周报正文、排障「skill 不生效」（后者用 setup-doctor）
 - 上架到某商店的运营流程
 
-## 工作流（草稿）
+## 工作流
 
 1. 问清什么时候该触发。
-2. 起 `name`（kebab-case）→ 写 `description`（触发场景写清，≤1024 字符）。
+2. 起 `name`（小写加连字符）→ 写 `description`（触发场景写清，不超过 1024 字符）。
 3. 整理成 `SKILL.md` 正文。
-4. 说明安装到 Claude Code / Codex / WorkBuddy / DeepSeek Harness 的路径（见 `references/install-table.md`）。
-5. 让用户写 5 句该触发、5 句不该触发自测。
-6. 讲理由：为什么 description 要比正文更「会触发」。
+4. **默认安装（Claude 桌面版）**：把文件夹打成 zip（顶层是 `<name>/SKILL.md`），在 Customize > Skills 上传并打开开关。详见 `references/install-table.md` 与 [官方 how-to](https://claude.com/docs/skills/how-to)。
+5. 可选：Claude Code / Codex / DeepSeek Harness 的目录安装方式见同表。
+6. 让用户写 5 句该触发、5 句不该触发自测。
+7. 讲理由：为什么 description 要比正文更「会触发」。
 
 规范要点见 `references/spec-checklist.md`。示例：`examples/weekly-report-skill/`（虚构示例）。
 
@@ -34,14 +35,16 @@ description: "Use when someone wants to turn a prompt they reuse into an install
 
 <!-- reference: references/install-table.md -->
 
-# 四个工具安装路径摘要（与仓库 README 一致）
+# 安装路径摘要（与仓库 README 一致）
 
-| 工具 | skill 放哪（Mac） | 说明 |
+默认推荐：**Claude 桌面版 / claude.ai** 上传 zip。其他工具可选。
+
+| 工具 | 怎么装 skill | 说明与出处 |
 | --- | --- | --- |
-| Claude Code | 个人 `~/.claude/skills/<name>/SKILL.md`；项目 `.claude/skills/<name>/SKILL.md` | [Skills 文档](https://code.claude.com/docs/en/skills) |
-| Codex | 用户 `$HOME/.agents/skills`；仓库 `.agents/skills` | [Build skills](https://learn.chatgpt.com/docs/build-skills) |
-| WorkBuddy | 项目级：工作区 `.codebuddy/skills/<name>/` | 官方已写明项目级路径；用户级精确路径 **待核实**，确认前 README 不写死 |
-| DeepSeek Harness | 项目 `<git-root>/.dsh/skills/` 或 `.agents/skills/`；用户 `~/.dsh/skills/` 或 `~/.agents/skills/` | 不递归深嵌套；[skills 子系统](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/subsystems/skills.md) |
+| Claude 桌面版 / claude.ai（默认） | 把技能文件夹打成 zip（zip 顶层必须是 `<name>/SKILL.md`），在 **Customize > Skills** 里上传，并打开开关 | [创建自定义 skill](https://claude.com/docs/skills/how-to) · [Skills 总览](https://claude.com/docs/skills/overview) |
+| Claude Code | 个人：`~/.claude/skills/<name>/SKILL.md`；项目：`.claude/skills/<name>/SKILL.md` | [Skills 文档](https://code.claude.com/docs/en/skills) |
+| Codex | 用户：`$HOME/.agents/skills`；仓库：`.agents/skills` | [Build skills](https://learn.chatgpt.com/docs/build-skills) |
+| DeepSeek Harness | 项目：`<git-root>/.dsh/skills/` 或 `.agents/skills/`；用户：`~/.dsh/skills/` 或 `~/.agents/skills/` | 不递归深嵌套；[skills 子系统](https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/master/docs/subsystems/skills.md) |
 
 无脚本 skill 也可粘贴 CI 生成的 `dist/single-file/<skill>.md`。
 

@@ -1,6 +1,6 @@
 # 触发测试清单 · setup-doctor
 
-> 来源：框架稿测试任务清单。适配实测结果：**待 Mac 实测**（Claude Code / Codex / WorkBuddy / DeepSeek Harness）。
+> 来源：框架稿测试任务清单。适配实测结果：**待 Mac 实测**（Claude 桌面版 / Claude Code / Codex / DeepSeek Harness）。
 
 ## 应该触发（10）
 
@@ -8,7 +8,7 @@
 - [should] 终端说 command not found: claude
 - [should] Codex 报错 401 怎么办
 - [should] api 400 是什么意思
-- [should] WorkBuddy 技能关了之后新任务调不到
+- [should] Claude 桌面版上传了 skill 却不生效
 - [should] 帮我检查电脑能不能装 Codex
 - [should] skill 装了但是不生效
 - [should] npm 安装报 EACCES
@@ -34,5 +34,4 @@
 | --- | --- |
 | Claude Code | 待 Mac 实测 |
 | Codex | 待 Mac 实测 |
-| WorkBuddy | 待 Mac 实测 |
 | DeepSeek Harness | 待 Mac 实测 |

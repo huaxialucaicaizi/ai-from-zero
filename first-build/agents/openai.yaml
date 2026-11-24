@@ -1,4 +1,4 @@
 interface:
   display_name: First Build
-  short_description: 一句话做出可双击打开的单文件网页作品（v0.1 骨架）。
+  short_description: 一句话做出可双击打开的单文件网页作品。
   default_prompt: 请用 first-build 带我做一个单文件个人网页，每步说明在做什么。

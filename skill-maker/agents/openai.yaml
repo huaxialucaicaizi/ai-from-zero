@@ -1,4 +1,4 @@
 interface:
   display_name: Skill Maker
-  short_description: 把常用提示词做成可安装 SKILL.md（v0.1 骨架）。
+  short_description: 把常用提示词做成可安装 SKILL.md，默认用 Claude 桌面版上传 zip。
   default_prompt: 请用 skill-maker 把我写周报的提示词做成一个可安装 skill。

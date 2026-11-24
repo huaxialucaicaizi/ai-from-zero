@@ -27,4 +27,4 @@ python3 scripts/build_single_file.py
 
 - 不写个人履历/案例（作者介绍仅保留 README 固定一句）
 - 不加第三方推广徽章或引流链接
-- 正文不提禁用产品名（CI 会检查）；路径白名单仅允许 `.codebuddy/` 这种官方目录写法
+- 正文不提禁用产品名（CI 会按 `scripts/validate_repo.py` 里的名单检查）
