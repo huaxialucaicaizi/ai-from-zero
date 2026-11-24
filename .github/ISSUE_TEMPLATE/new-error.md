@@ -12,7 +12,7 @@ labels: ["error-library"]
 ## 系统
 
 - macOS 版本：
-- 工具（Claude Code / Codex / WorkBuddy / DeepSeek Harness）：
+- 工具（Claude 桌面版 / Claude Code / Codex / DeepSeek Harness）：
 - 工具版本（若可知）：
 
 ## 你已尝试的步骤

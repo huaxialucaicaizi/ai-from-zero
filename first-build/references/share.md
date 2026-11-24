@@ -1,7 +1,18 @@
-# 分享作品（草稿）
+# 分享作品
 
-1. **截图**：浏览器打开 HTML → 截图发送。
-2. **链接**：按 GitHub Pages 官方步骤发布（见 [GitHub Pages 文档](https://docs.github.com/pages)）。  
-   国内访问是否稳定：**待核实**；完整流程 **待 Mac 实测**。
+## 方式一：截图（最快）
 
-> 虚构示例：假设用户把 `index.html` 放到仓库 `docs/` 后开启 Pages——具体按钮文案以 GitHub 当前 UI 为准。
+1. 用浏览器打开 HTML 文件。
+2. 截图发给同事或朋友。
+
+## 方式二：GitHub Pages（需要 GitHub 账号）
+
+按官方文档操作：[GitHub Pages](https://docs.github.com/pages)。
+
+常见步骤（以官方当前界面为准，文案可能变化）：
+
+1. 新建仓库，把 `index.html` 放进仓库（可放在根目录或 `docs/`）。
+2. 在仓库设置里打开 Pages，选择分支与目录。
+3. 等待部署完成后打开生成的链接。
+
+国内访问是否稳定：**待核实**。完整流程 **待 Mac 实测**。

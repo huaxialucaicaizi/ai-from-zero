@@ -1,6 +1,6 @@
 # 触发测试清单 · prompt-coach
 
-> 来源：框架稿测试任务清单。适配实测结果：**待 Mac 实测**（Claude Code / Codex / WorkBuddy / DeepSeek Harness）。
+> 来源：框架稿测试任务清单。适配实测结果：**待 Mac 实测**（Claude 桌面版 / Claude Code / Codex / DeepSeek Harness）。
 
 ## 应该触发（10）
 
@@ -34,5 +34,4 @@
 | --- | --- |
 | Claude Code | 待 Mac 实测 |
 | Codex | 待 Mac 实测 |
-| WorkBuddy | 待 Mac 实测 |
 | DeepSeek Harness | 待 Mac 实测 |

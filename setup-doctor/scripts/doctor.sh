@@ -12,7 +12,7 @@ while [[ $# -gt 0 ]]; do
       ;;
     -h|--help)
       cat <<'EOF'
-Usage: bash scripts/doctor.sh [--tool all|claude-code|codex|workbuddy|deepseek-harness|hyperframes]
+Usage: bash scripts/doctor.sh [--tool all|claude-code|codex|deepseek-harness|hyperframes|claude-desktop]
 
 Read-only checks for Mac. Prints plain-language pass/fail lines.
 Node version rules differ by tool — reports name the tool requirement.
@@ -106,7 +106,7 @@ case "$TOOL" in
   claude-code) need_claude=true ;;
   hyperframes) need_hf=true ;;
   deepseek-harness) need_dsh=true ;;
-  codex|workbuddy) ;;
+  codex|claude-desktop) ;;
   *)
     echo "未知 --tool: $TOOL（将跳过分工具 Node 判断）" >&2
     ;;
@@ -143,7 +143,7 @@ echo "=== 网络连通（官方文档域名，失败只提示）==="
 hosts=(
   "https://code.claude.com/docs/en/setup"
   "https://learn.chatgpt.com/docs/codex/cli"
-  "https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Installation-Mac-Guide"
+  "https://claude.com/docs/skills/how-to"
   "https://github.com/deepseek-ai/deepseek-harness"
 )
 if have_cmd curl; then

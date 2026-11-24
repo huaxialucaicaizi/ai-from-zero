@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>我的个人页 · 虚构示例</title>
+  <style>
+    :root {
+      --bg: #f3efe6;
+      --ink: #1c1917;
+      --accent: #0f766e;
+      --card: #fffdf8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, #d9f3ef 0%, transparent 45%),
+        radial-gradient(circle at 90% 20%, #fde68a 0%, transparent 40%),
+        var(--bg);
+      min-height: 100vh;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      line-height: 1.15;
+      margin: 0 0 12px;
+    }
+    .lead {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      max-width: 36em;
+    }
+    section {
+      margin-top: 36px;
+      padding: 20px 22px;
+      background: var(--card);
+      border: 1px solid rgba(28, 25, 23, 0.08);
+    }
+    h2 { margin: 0 0 10px; font-size: 1.15rem; }
+    ul { margin: 0; padding-left: 1.2em; line-height: 1.7; }
+    footer {
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #57534e;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="badge">虚构示例 · 请把姓名与经历换成你自己的</p>
+    <h1>你好，我是小周</h1>
+    <p class="lead">
+      我在学习用 AI 做日常工作。这是一页可以双击打开的个人介绍，
+      用来练习「一句话做出作品」。
+    </p>
+
+    <section>
+      <h2>我在做什么</h2>
+      <ul>
+        <li>用 AI 写清楚周报和会议纪要</li>
+        <li>把常用提示词整理成可复用的说明</li>
+        <li>练习做出第一个能分享的小网页</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>联系方式（占位）</h2>
+      <ul>
+        <li>邮箱：you@example.com</li>
+        <li>城市：待填写</li>
+      </ul>
+    </section>
+
+    <footer>
+      本页为 first-build 模板中的虚构示例。字体建议使用免费商用的思源黑体等。
+    </footer>
+  </main>
+</body>
+</html>
