@@ -121,7 +121,7 @@ zip -r ai-for-my-job.zip ai-for-my-job/
 | --- | --- | --- | --- |
 | Claude Code | 推荐 `curl -fsSL https://claude.ai/install.sh \| bash`；或 `brew install --cask claude-code`。要求 macOS 13.0+、内存 4 GB 及以上 | 个人：`~/.claude/skills/<name>/SKILL.md`；项目：`.claude/skills/<name>/SKILL.md` | [安装](https://code.claude.com/docs/en/setup) · [Skills](https://code.claude.com/docs/en/skills) |
 | Codex | `curl -fsSL https://chatgpt.com/codex/install.sh \| sh` | 用户：`$HOME/.agents/skills`；仓库：`.agents/skills` | [CLI](https://learn.chatgpt.com/docs/codex/cli) · [Skills](https://learn.chatgpt.com/docs/build-skills) |
-| DeepSeek Harness | 先装 Node.js（当前升级说明要求 Node.js 24.9 及以上，以仓库最新文档为准），然后 `npx @deepseek-ai/dsh web` | 项目：`<git-root>/.dsh/skills/<name>/SKILL.md` 或 `.agents/skills/`；用户：`~/.dsh/skills/` 或 `~/.agents/skills/` | [说明](https://github.com/deepseek-ai/deepseek-harness/blob/HEAD/README.md) · [skills](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/subsystems/skills.md) |
+| DeepSeek Harness | 先装 Node.js（当前升级说明要求 Node.js 24.9 及以上，以仓库最新文档为准），然后 `npx @deepseek-ai/dsh web` | 项目：`<git-root>/.dsh/skills/<name>/SKILL.md` 或 `.agents/skills/`；用户：`~/.dsh/skills/` 或 `~/.agents/skills/` | [说明](https://github.com/deepseek-ai/deepseek-harness) · [skills](https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/master/docs/subsystems/skills.md) |
 
 各工具触发适配测试结果见 [`tests/triggers/`](./tests/triggers/)（当前均为 **待 Mac 实测**）。
 
@@ -308,7 +308,7 @@ If code execution is required, turn it on in settings as the official docs descr
 | --- | --- | --- | --- |
 | Claude Code | Preferred: `curl -fsSL https://claude.ai/install.sh \| bash`; or `brew install --cask claude-code`. Requires macOS 13.0+ and 4 GB+ RAM | User: `~/.claude/skills/<name>/SKILL.md`; project: `.claude/skills/<name>/SKILL.md` | [Setup](https://code.claude.com/docs/en/setup) · [Skills](https://code.claude.com/docs/en/skills) |
 | Codex | `curl -fsSL https://chatgpt.com/codex/install.sh \| sh` | User: `$HOME/.agents/skills`; repo: `.agents/skills` | [CLI](https://learn.chatgpt.com/docs/codex/cli) · [Skills](https://learn.chatgpt.com/docs/build-skills) |
-| DeepSeek Harness | Install Node.js first (current upgrade guide: Node.js 24.9+; follow the latest docs), then `npx @deepseek-ai/dsh web` | Project: `<git-root>/.dsh/skills/<name>/SKILL.md` or `.agents/skills/`; user: `~/.dsh/skills/` or `~/.agents/skills/` | [README](https://github.com/deepseek-ai/deepseek-harness/blob/HEAD/README.md) · [skills](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/subsystems/skills.md) |
+| DeepSeek Harness | Install Node.js first (current upgrade guide: Node.js 24.9+; follow the latest docs), then `npx @deepseek-ai/dsh web` | Project: `<git-root>/.dsh/skills/<name>/SKILL.md` or `.agents/skills/`; user: `~/.dsh/skills/` or `~/.agents/skills/` | [README](https://github.com/deepseek-ai/deepseek-harness) · [skills](https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/master/docs/subsystems/skills.md) |
 
 Trigger adaptation results live under [`tests/triggers/`](./tests/triggers/) (all currently **To be tested on Mac**).
 

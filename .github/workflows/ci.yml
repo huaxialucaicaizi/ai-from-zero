@@ -33,10 +33,10 @@ jobs:
           args: >-
             --verbose
             --no-progress
-            --max-retries 3
-            --retry-wait-time 2
-            --timeout 15
-            --accept 200,204,206,429
+          --max-retries 5
+          --retry-wait-time 3
+          --timeout 20
+          --accept 200,204,206,429
             --exclude-mail
             --exclude 'https://github.com/huaxialucaicaizi/ai-from-zero/(issues|discussions|security)'
             --exclude 'https://linux.do'

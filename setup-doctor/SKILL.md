@@ -39,7 +39,7 @@ bash setup-doctor/scripts/doctor.sh --tool all
 
 - Claude Code：macOS 13.0+、4 GB 内存 — [setup](https://code.claude.com/docs/en/setup)
 - Claude 桌面版 Skills：上传 zip 时顶层必须是技能文件夹 — [how-to](https://claude.com/docs/skills/how-to)
-- DeepSeek Harness：Node.js 以官方 engines / 升级说明为准（当前文档写 24.9+）— [Node 24 升级说明](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/upgrade-guide/v0.2.1-rc.2/node-24/guide.md)
+- DeepSeek Harness：Node.js 以官方 engines / 升级说明为准（当前文档写 24.9+）— [Node 24 升级说明](https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/master/docs/upgrade-guide/v0.2.1-rc.2/node-24/guide.md)
 
 ## 待 Mac 实测
 

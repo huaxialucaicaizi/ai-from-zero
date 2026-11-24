@@ -123,7 +123,7 @@ fi
 if $need_dsh; then
   # Official upgrade guide currently states Node.js 24.9+; re-check docs if this drifts.
   check_node_for "DeepSeek Harness" "24.9.0" \
-    "https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/upgrade-guide/v0.2.1-rc.2/node-24/guide.md"
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/master/docs/upgrade-guide/v0.2.1-rc.2/node-24/guide.md"
 fi
 
 # --- CLI presence (informational) ---
